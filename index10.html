@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script>
+
+function minMax(arr) {
+	var lowest = arr[0];
+	var biggest = arr[0];
+	for(var i = 1; i<arr.length; i++){
+		if ( arr[i] < lowest){
+			lowest = arr[i];
+		}
+		if (arr[i]> biggest){
+			biggest = arr[i];
+		}
+	}
+	return [lowest,biggest];
+}
+</script>
+<body>
+  practice problem ok.
+  Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+
+  Examples
+  
+  minMax([1, 2, 3, 4, 5]) ➞ [1, 5]
+  
+  minMax([2334454, 5]) ➞ [5, 2334454]
+  
+  minMax([1]) ➞ [1, 1]
+  Notes
+  
+  All test arrays will have at least one element and are valid.
+</body>
+</html>
